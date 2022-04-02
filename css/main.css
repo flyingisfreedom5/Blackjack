@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Red Hat Mono', monospace;
+}
+
+.background-image {
+    background-image: url('https://pl.sterlingcdn.com/wp-content/uploads/sites/3/2018/07/blackjack-classic-background.jpg'); ;
+
+}
+

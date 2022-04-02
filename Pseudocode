@@ -1,0 +1,75 @@
+Blackjack Pseudocode
+
+
+
+After player chooses bet amount and accept,
+
+Dealer Starting Position;
+Start with 2 cards , the card from left side close, other one is open.
+
+Player Starting Position;
+Start with 2 cards, both are open.
+Player Hand;
+Player clicks take card or stay button
+IF clicks take card, player takes new card(function) and its going to player hand total.
+IF clicks stand button, move on to dealer hand(function) and dealer hand closed card going to be open
+IF hand total greater than 21 => Dealer Wins
+IF total is equal 21, => Move on to dealer hand
+IF Player makes a Blackjack in starting position, bets payment should be 1.5X (ex. Bet:$100, Payment:$250)
+
+Dealer Hand;
+IF player hand total already greater than 21, => Dealer Wins
+Otherwise, open to closed Dealer card, IF dealer hand total less than 17 takes new card(function) ELSE don’t take card.
+IF dealer hand total, greater than player hand and less than or equal 21 => Dealer Wins
+IF dealer hand total less than player hand =>Player Wins
+If dealer hand total greater than 21 => Player Wins
+IF dealer hand total equals player hand total => Game is Tie
+
+Additional Information:
+IF players (dealer and player) have two aces, second one’s value is  1 or players have an ace and hand’s total is greater than >21 ace’s value is 1 
+Cash box starts in $1000 value
+There are 4 different casino chips 10/20/50/100
+After player choose his bet amount, total value goes to bets box area
+After game ends wallet increase or decrease bets box area section will be zero again.
+
+/*----- constants -----*/
+52 Cards,
+Ace value 1 or 11 for each symbol
+1-10 value is what is writing on card, for each symbol
+King/Queen/Jack value is 10, for each symbol
+
+
+/*----- app's state (variables) -----*/
+Game status: Win messages for dealer or player, tie message
+Random Card Finder
+Dealer card Row, Player card row
+Cash Box
+
+/*----- cached element references -----*/
+Take Card and Stand Buttons
+Play Again Button
+Bet Accept Button
+Player Hand total box
+Dealer Hand total box
+Bet Amount Box
+Cash Amount Box
+Casino Chips Area
+
+/*----- event listeners -----*/
+stand.addEventListener(‘click’, dealer hand function);
+takeCard.addEventListener(‘click’, card for player function);
+betAccept.addEventListener(‘click’, betAccept function);
+casinoChips.addEventListener(‘click’, sum(casinoChips) function);
+
+/*----- functions -----*/
+Bet Accept (Play) function;
+New card for Player function;
+New Card for Dealer function;
+Dealer hand function;
+Ace Check function;
+Ace Reduce function;
+Card Shuffle function;
+Board Build function;
+
+
+
