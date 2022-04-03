@@ -32,7 +32,7 @@
     margin:  auto;
     position: absolute;
     width: 150px;
-    bottom: 10%;
+    bottom: 14%;
     left: 45%;
     font-size: 18px;
   }
@@ -43,22 +43,24 @@
   .casino-chips{
     display: flex;
     justify-content: center;
-    bottom: 15%;
+    
   }
 
   .casino-chips :hover{
       background-color: #810f19;
-      padding: 12px;
+      padding: 17px;
   }
   .casino-chip {
       background-color: #134c92;
       color:aqua;
-      border-radius: 10px;
+      border-radius: 15px;
       cursor: pointer;
       padding: 10px;
       margin: 2px;
       font-weight: bold;
+      font-size: 15px;
       transition: 0.5s;
+      letter-spacing: 1px;
   }
   
   .board {
@@ -80,16 +82,17 @@
 
   .play-msg{
       font-size: 18px;
-      background:-webkit-linear-gradient(90 deg, #87bcfc, #ff0015);
+      background:-webkit-linear-gradient(90 deg, #000000, #0f0a0b);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
   }
 
  .d-total {
-     background: -webkit-linear-gradient(90deg, #192029, #ff0015);
+     background: -webkit-linear-gradient(90deg, #000000, #0f0a0b);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+     font-size: 30px;
  }
 
  .d-total-d {
@@ -98,9 +101,10 @@
      -webkit-text-fill-color: transparent;
  }
  .p-total {
-     background: -webkit-linear-gradient(90deg, #192029, #ff0015 );
+     background: -webkit-linear-gradient(90deg, #000000, #0f0a0b);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+     font-size: 30px;
  }
 
  .p-total-p {
@@ -135,7 +139,7 @@
     background-color: #10151b;
     border-style: none;
     letter-spacing: 1px;
-  
+    cursor: pointer
   }
   .hit-btn{
     padding: 20px;
@@ -148,7 +152,7 @@
     background-color: #10151b;
     border-style: none;
     letter-spacing: 1px;
-  
+    cursor: pointer
   }
   .hit-btn:hover{
     background-color: #810f19;
@@ -180,8 +184,8 @@
 
 .play-again-btn{
     padding: 20px;
-    padding-left: 30px;
-    padding-right: 27px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-bottom: 20px;
     cursor: pointer;
     font-weight: bold;
@@ -189,6 +193,7 @@
     background-color: red;
     border-style: none;
     letter-spacing: 1px;
+    cursor: pointer
   }
   
   
@@ -205,8 +210,8 @@
 
 .bet-accept-btn{
     padding: 20px;
-    padding-left: 30px;
-    padding-right: 27px;
+    padding-left:  25px;
+    padding-right: 25px;
     margin-bottom: 20px;
     cursor: pointer;
     font-weight: bold;
@@ -214,6 +219,7 @@
     background-color: red;
     border-style: none;
     letter-spacing: 1px;
+    cursor: pointer
   }
   
   
@@ -223,12 +229,22 @@
     transition: 3s;
     font-size: large;
     border: #80afe7 5px solid;
-    border-radius: 10px;
-    margin-left: 5px;
     color: white;
   }
 
-  .cash-amount{
-    bottom: 10%;
+  .cash{
+    display: flexbox;
+    flex-direction: column;
+    color: #810f19;
+    text-align: center;
+    margin:  auto;
+    position: absolute;
+    width: 150px;
+    bottom: 12%;
     right: 25%;
+    font-size: 20px;
+  }
+
+  .bet-amount {
+    color: #810f19
   }
