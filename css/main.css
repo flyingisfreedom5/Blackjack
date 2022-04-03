@@ -5,7 +5,230 @@
 }
 
 .background-image {
-    background-image: url('https://pl.sterlingcdn.com/wp-content/uploads/sites/3/2018/07/blackjack-classic-background.jpg'); ;
-
+    background-image: url(card-deck-css/images/background/blackjack-table.png); ;
+    background-size: 3000px 1500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    transition: 2s;
 }
 
+.header {
+    color: #134c92;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    font-size: 25px;
+  }
+
+  .bet-zone {
+    display: flexbox;
+    flex-direction: column;
+    color: #134c92;
+    text-align: center;
+    margin:  auto;
+    position: absolute;
+    width: 150px;
+    bottom: 10%;
+    left: 45%;
+    font-size: 18px;
+  }
+
+  .fa-light {
+    color: #134c92;
+  }
+  .casino-chips{
+    display: flex;
+    justify-content: center;
+    bottom: 15%;
+  }
+
+  .casino-chips :hover{
+      background-color: #810f19;
+      padding: 12px;
+  }
+  .casino-chip {
+      background-color: #134c92;
+      color:aqua;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px;
+      margin: 2px;
+      font-weight: bold;
+      transition: 0.5s;
+  }
+  
+  .board {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+  }
+
+  .player-area img {
+    height: 200px;
+    background-color: white;
+  }
+
+  .dealer-area img {
+      height: 200px;
+      background-color: white;
+      margin-bottom: 20px;
+  }
+
+  .play-msg{
+      font-size: 18px;
+      background:-webkit-linear-gradient(90 deg, #87bcfc, #ff0015);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+  }
+
+ .d-total {
+     background: -webkit-linear-gradient(90deg, #192029, #ff0015);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .d-total-d {
+     background: -webkit-linear-gradient(90deg, #192029, #ff0015) ;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+ .p-total {
+     background: -webkit-linear-gradient(90deg, #192029, #ff0015 );
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .p-total-p {
+     background: -webkit-linear-gradient(90deg, #192029, #ff0015);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .dealer-hand-total {
+     position:absolute;
+     top: 15%;
+     left: 17%;
+ }
+
+ .player-hand-total {
+     position: absolute;
+     top: 70%;
+     left: 17%;
+ }
+
+ .buttons {
+     position: absolute;
+     bottom: 2%;
+     left: 44%;
+ }
+
+ .stand-btn{
+    padding: 20px;
+    margin-right: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #10151b;
+    border-style: none;
+    letter-spacing: 1px;
+  
+  }
+  .hit-btn{
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-left: 25px;
+    cursor: 
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #10151b;
+    border-style: none;
+    letter-spacing: 1px;
+  
+  }
+  .hit-btn:hover{
+    background-color: #810f19;
+    padding: 30px;
+    transition: 3s;
+    font-size: large;
+    border: #80afe7 5px solid;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .stand-btn:hover{
+    background-color:#810f19;
+    padding: 30px;
+    transition: 3s;
+    font-size: large;
+    border: #80afe7 5px solid;
+    border-radius: 10px;
+    color: white;
+  }
+
+
+.play{
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+.play-again-btn{
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 27px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: red;
+    border-style: none;
+    letter-spacing: 1px;
+  }
+  
+  
+.play-again-btn:hover{
+    background-color: #810f19;
+    padding: 20px;
+    transition: 3s;
+    font-size: large;
+    border: #80afe7 5px solid;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: white;
+  }
+
+.bet-accept-btn{
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 27px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: red;
+    border-style: none;
+    letter-spacing: 1px;
+  }
+  
+  
+.bet-accept-btn:hover{
+    background-color: #810f19;
+    padding: 20px;
+    transition: 3s;
+    font-size: large;
+    border: #80afe7 5px solid;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: white;
+  }
+
+  .cash-amount{
+    bottom: 10%;
+    right: 25%;
+  }
