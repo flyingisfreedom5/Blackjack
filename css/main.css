@@ -5,9 +5,9 @@
 }
 
 .background-image {
-    background-image: url(card-deck-css/images/background/blackjack-table.png); ;
-    background-size: 3000px 1500px;
-    background-position: center;
+    background-image: url(https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg); ;
+    background-size: 1400px 700px;
+    background-position: cover;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
@@ -99,6 +99,7 @@
      background: -webkit-linear-gradient(90deg, #192029, #ff0015) ;
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+     font-size: 15px;
  }
  .p-total {
      background: -webkit-linear-gradient(90deg, #000000, #0f0a0b);
@@ -111,6 +112,7 @@
      background: -webkit-linear-gradient(90deg, #192029, #ff0015);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+     font-size: 15px 
  }
 
  .dealer-hand-total {

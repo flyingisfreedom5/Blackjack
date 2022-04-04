@@ -54,6 +54,8 @@ const masterDeck = [
     {name: sQ, value: 10,  src: (css\card-deck-css\images\spades\spades-rQ.svg) },
     {name: sK, value: 10,  src: (css\card-deck-css\images\spades\spades-rK.svg) },
     
+  
+
 ]
 /*----- app's state (variables) -----*/
 let scores; // An object with keys of 'p' (player), 't' (ties) and 'd' (dealer)
@@ -61,12 +63,22 @@ let results // An object with keys of 'p' & 'd' with values of hand total
 let winner; // A string with values of either 'p', 'd', 't',  
 /*----- cached element references -----*/
 const scoreEls = {
-    p: document.getElementById('player-area'),
-    d: document.getElementById('dealer-area')
+    p: document.getElementsByClassName('player-area'),
+    d: document.getElementsByClassName('dealer-area')
 };
 
-const pResultEl = document.getElementById('p-total-p'):
-const dResultEl = document.getElementById('d-total-d');
+const pResultEl = document.getElementsByClassName('p-total-p');
+const dResultEl = document.getElementsByClassName('d-total-d');
+
+let dHand = document.getElementsByClassName('dealer-area');
+let pHand = document.getElementsByClassName('player-area');
+let cardImg
+results.textContent = firstCard + ' ' + secondCard;
+
+
+d-total-d.textContent = htotal;
+
+
 
 /*----- event listeners -----*/
 document.querySelector('body')
@@ -77,7 +89,6 @@ Init();
 function init() {
     scores = {
         p: 0,
-        t: 0,
         d: 0
     };
     results = {
@@ -88,7 +99,38 @@ function init() {
     render();
 }
 
-function render () {
-    renderScoes();
+function render() {
+    renderScores();
     renderResults();
+}
+
+function betAccept() {
+    if(sum === 21)
+    {
+        console.log("Blackjack!!");
+    
+    } else if(sum< 21)
+
+    console.log("You can take a new card");
+} else {
+    console.log("You busted");
+}
+
+function hitButton() {
+    if (scores[standButton] === false) {
+        let card = randomCard ();
+        showCard (card, pHand);
+    }
+}
+
+function getRandomCard(){
+    let randomCard = Math.floor((Math.random()*13))
+    return scores[masterDeck.value][randomIndex];
+}
+
+function showCard(card, activePlayer){
+    if(activePlayer['scores']) <= 21{
+        let cardImg = document
+
+    }
 }
