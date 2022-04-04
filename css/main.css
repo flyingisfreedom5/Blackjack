@@ -32,12 +32,12 @@
     margin:  auto;
     position: absolute;
     width: 150px;
-    bottom: 14%;
+    bottom: 10%;
     left: 45%;
     font-size: 18px;
   }
 
-  .fa-light {
+  .fas fa {
     color: #134c92;
   }
   .casino-chips{
@@ -121,7 +121,7 @@
 
  .player-hand-total {
      position: absolute;
-     top: 70%;
+     top: 65%;
      left: 17%;
  }
 
