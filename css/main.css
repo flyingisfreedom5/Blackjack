@@ -250,3 +250,15 @@
   .bet-amount {
     color: #810f19
   }
+
+  .dealer-area img {
+      height: 105px;
+      width: 75px;
+      margin: 1px;
+  }
+
+  .player-area img {
+    height: 105px;
+    width: 75px;
+    margin: 1px;
+}

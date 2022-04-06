@@ -1,136 +1,119 @@
 /*----- constants -----*/
 
 const masterDeck = [
-    {name: c02, value: 2,  src: (css\card-deck-css\images\clubs\clubs-r02.svg) },
-    {name: c03, value: 3,  src: (css\card-deck-css\images\clubs\clubs-r03.svg) },
-    {name: c04, value: 4,  src: (css\card-deck-css\images\clubs\clubs-r04.svg) },
-    {name: c05, value: 5,  src: (css\card-deck-css\images\clubs\clubs-r05.svg) },
-    {name: c06, value: 6,  src: (css\card-deck-css\images\clubs\clubs-r06.svg) },
-    {name: c07, value: 7,  src: (css\card-deck-css\images\clubs\clubs-r07.svg) },
-    {name: c08, value: 8,  src: (css\card-deck-css\images\clubs\clubs-r08.svg) },
-    {name: c09, value: 9,  src: (css\card-deck-css\images\clubs\clubs-r09.svg) },
-    {name: c10, value: 10,  src: (css\card-deck-css\images\clubs\clubs-r10.svg) },
-    {name: cA, value: 11,  src: (css\card-deck-css\images\clubs\clubs-A.svg) },
-    {name: cJ, value: 10,  src: (css\card-deck-css\images\clubs\clubs-J.svg) },
-    {name: cQ, value: 10,  src: (css\card-deck-css\images\clubs\clubs-Q.svg) },
-    {name: cK, value: 10,  src: (css\card-deck-css\images\clubs\clubs-K.svg) },
-    {name: d02, value: 2,  src: (css\card-deck-css\images\diamonds\diamonds-r02.svg) },
-    {name: d03, value: 3,  src: (css\card-deck-css\images\diamonds\diamonds-r03.svg) },
-    {name: d04, value: 4,  src: (css\card-deck-css\images\diamonds\diamonds-r04.svg) },
-    {name: d05, value: 5,  src: (css\card-deck-css\images\diamonds\diamonds-r05.svg) },
-    {name: d06, value: 6,  src: (css\card-deck-css\images\diamonds\diamonds-r06.svg) },
-    {name: d07, value: 7,  src: (css\card-deck-css\images\diamonds\diamonds-r07.svg) },
-    {name: d08, value: 8,  src: (css\card-deck-css\images\diamonds\diamonds-r08.svg) },
-    {name: d09, value: 9,  src: (css\card-deck-css\images\diamonds\diamonds-r09.svg) },
-    {name: d10, value: 10,  src: (css\card-deck-css\images\diamonds\diamonds-r10.svg) },
-    {name: dA, value: 11,  src: (css\card-deck-css\images\diamonds\diamonds-A.svg) },
-    {name: dJ, value: 10,  src: (css\card-deck-css\images\diamonds\diamonds-J.svg) },
-    {name: dQ, value: 10,  src: (css\card-deck-css\images\diamonds\diamonds-Q.svg) },
-    {name: dK, value: 10,  src: (css\card-deck-css\images\diamonds\diamonds-K.svg) },
-    {name: h02, value: 2,  src: (css\card-deck-css\images\hearts\hearts-r02.svg) },
-    {name: h03, value: 3,  src: (css\card-deck-css\images\hearts\hearts-r03.svg) },
-    {name: h04, value: 4,  src: (css\card-deck-css\images\hearts\hearts-r04.svg) },
-    {name: h05, value: 5,  src: (css\card-deck-css\images\hearts\hearts-r05.svg) },
-    {name: h06, value: 6,  src: (css\card-deck-css\images\hearts\hearts-r06.svg) },
-    {name: h07, value: 7,  src: (css\card-deck-css\images\hearts\hearts-r07.svg) },
-    {name: h08, value: 8,  src: (css\card-deck-css\images\hearts\hearts-r08.svg) },
-    {name: h09, value: 9,  src: (css\card-deck-css\images\hearts\hearts-r09.svg) },
-    {name: h10, value: 10,  src: (css\card-deck-css\images\hearts\hearts-r10.svg) },
-    {name: hA, value: 11,  src: (css\card-deck-css\images\hearts\hearts-A.svg) },
-    {name: hJ, value: 10,  src: (css\card-deck-css\images\hearts\hearts-J.svg) },
-    {name: hQ, value: 10,  src: (css\card-deck-css\images\hearts\hearts-Q.svg) },
-    {name: hK, value: 10,  src: (css\card-deck-css\images\hearts\hearts-K.svg) },
-    {name: s02, value: 2,  src: (css\card-deck-css\images\spades\spades-r02.svg) },
-    {name: s03, value: 3,  src: (css\card-deck-css\images\spades\spades-r03.svg) },
-    {name: s04, value: 4,  src: (css\card-deck-css\images\spades\spades-r04.svg) },
-    {name: s05, value: 5,  src: (css\card-deck-css\images\spades\spades-r05.svg) },
-    {name: s06, value: 6,  src: (css\card-deck-css\images\spades\spades-r06.svg) },
-    {name: s07, value: 7,  src: (css\card-deck-css\images\spades\spades-r07.svg) },
-    {name: s08, value: 8,  src: (css\card-deck-css\images\spades\spades-r08.svg) },
-    {name: s09, value: 9,  src: (css\card-deck-css\images\spades\spades-r09.svg) },
-    {name: s10, value: 10,  src: (css\card-deck-css\images\spades\spades-r10.svg) },
-    {name: sA, value: 11,  src: (css\card-deck-css\images\spades\spades-rA.svg) },
-    {name: sJ, value: 10,  src: (css\card-deck-css\images\spades\spades-rJ.svg) },
-    {name: sQ, value: 10,  src: (css\card-deck-css\images\spades\spades-rQ.svg) },
-    {name: sK, value: 10,  src: (css\card-deck-css\images\spades\spades-rK.svg) },
-    
-  
+    {name: 'c02', value: 2},
+    {name: 'c03', value: 3},
+    {name: 'c04', value: 4},
+    {name: 'c05', value: 5},
+    {name: 'c06', value: 6},
+    {name: 'c07', value: 7},
+    {name: 'c08', value: 8},
+    {name: 'c09', value: 9},
+    {name: 'c10', value: 10},
+    {name: 'cA', value: 11},
+    {name: 'cJ', value: 10},
+    {name: 'cQ', value: 10},
+    {name: 'cK', value: 10},
+    {name: 'd02', value: 2},
+    {name: 'd03', value: 3},
+    {name: 'd04', value: 4},
+    {name: 'd05', value: 5},
+    {name: 'd06', value: 6},
+    {name: 'd07', value: 7},
+    {name: 'd08', value: 8},
+    {name: 'd09', value: 9},
+    {name: 'd10', value: 10},
+    {name: 'dA', value: 11},
+    {name: 'dJ', value: 10},
+    {name: 'dQ', value: 10},
+    {name: 'dK', value: 10},
+    {name: 'h02', value: 2},
+    {name: 'h03', value: 3},
+    {name: 'h04', value: 4},
+    {name: 'h05', value: 5},
+    {name: 'h06', value: 6},
+    {name: 'h07', value: 7},
+    {name: 'h08', value: 8},
+    {name: 'h09', value: 9},
+    {name: 'h10', value: 10},
+    {name: 'hA', value: 11},
+    {name: 'hJ', value: 10},
+    {name: 'hQ', value: 10},
+    {name: 'hK', value: 10},
+    {name: 's02', value: 2},
+    {name: 's03', value: 3},
+    {name: 's04', value: 4},
+    {name: 's05', value: 5},
+    {name: 's06', value: 6},
+    {name: 's07', value: 7},
+    {name: 's08', value: 8},
+    {name: 's09', value: 9},
+    {name: 's10', value: 10},
+    {name: 'sA', value: 11},
+    {name: 'sJ', value: 10},
+    {name: 'sQ', value: 10},
+    {name: 'sK', value: 10},
+];
+console.log(masterDeck);
 
-]
-/*----- app's state (variables) -----*/
-let scores; // An object with keys of 'p' (player), 't' (ties) and 'd' (dealer)
-let results // An object with keys of 'p' & 'd' with values of hand total
-let winner; // A string with values of either 'p', 'd', 't',  
+// /*----- app's state (variables) -----*/
+let playerHand;
+let dealerHand;
+let winner; 
+let aceCount; 
+let ShuffledDeck;
 /*----- cached element references -----*/
-const scoreEls = {
-    p: document.getElementsByClassName('player-area'),
-    d: document.getElementsByClassName('dealer-area')
-};
 
-const pResultEl = document.getElementsByClassName('p-total-p');
-const dResultEl = document.getElementsByClassName('d-total-d');
-
-let dHand = document.getElementsByClassName('dealer-area');
-let pHand = document.getElementsByClassName('player-area');
-let cardImg
-results.textContent = firstCard + ' ' + secondCard;
+const pResultEl = document.querySelector('.p-total-p');
+const dResultEl = document.querySelector('.d-total-d');
+const betAcceptEl = document.querySelector(".bet-accept-btn")
+const hitEl = document.querySelector('.hit-btn');
+const standEl = document.querySelector('.stand-btn');
+const casinoChipsEl = document.querySelector('.casino-chips');
+const betAmountEl = document.querySelector('.bet-amount');
+const cashEl = document.querySelector('.cash-amount');
 
 
-d-total-d.textContent = htotal;
+
+
+
 
 
 
 /*----- event listeners -----*/
-document.querySelector('body')
-    .addEventListener('click', handleChoice);
+// document.querySelector('body')
+//     .addEventListener('click', handleChoice);
 /*----- functions -----*/
-Init();
+init();
+
 
 function init() {
-    scores = {
-        p: 0,
-        d: 0
-    };
-    results = {
-        p: 21,
-        d: 21,
-    };
+    playerHand = [];
+    dealerHand = [];
     winner = '';
+    ShuffledDeck = getNewShuffledDeck();   
     render();
 }
 
+
 function render() {
-    renderScores();
-    renderResults();
+    renderHand();
 }
 
-function betAccept() {
-    if(sum === 21)
-    {
-        console.log("Blackjack!!");
-    
-    } else if(sum< 21)
-
-    console.log("You can take a new card");
-} else {
-    console.log("You busted");
-}
-
-function hitButton() {
-    if (scores[standButton] === false) {
-        let card = randomCard ();
-        showCard (card, pHand);
+function getNewShuffledDeck() {
+   
+    const tempDeck = [...masterDeck];
+    const newShuffledDeck = [];
+    while (tempDeck.length) {
+      // Get a random index for a card still in the tempDeck
+      const rndIdx = Math.floor(Math.random() * tempDeck.length);
+      // Note the [0] after splice - this is because splice always returns an array and we just want the card object in that array
+      newShuffledDeck.push(tempDeck.splice(rndIdx, 1)[0]);
     }
+    return newShuffledDeck;
 }
 
-function getRandomCard(){
-    let randomCard = Math.floor((Math.random()*13))
-    return scores[masterDeck.value][randomIndex];
-}
 
-function showCard(card, activePlayer){
-    if(activePlayer['scores']) <= 21{
-        let cardImg = document
 
-    }
-}
+
+
