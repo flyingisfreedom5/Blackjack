@@ -30,16 +30,51 @@ const hitStandBtnsEl = document.querySelector('.buttons');
 const betControlsEl = document.querySelector('.casino-chips');
 const betAcceptBtnEl = document.getElementById('bet-accept-btn');
 const betBtns = document.querySelectorAll('.casino-chips > button');
+const chip10 = document.getElementById("ten");
+const chip25 = document.getElementById("twenty-five");
+const chip50 = document.getElementById("fifty");
+const chip100 = document.getElementById("hundred");
 
 /*----- event listeners -----*/
-betAcceptBtnEl.addEventListener('click', handleAccept);
+betAcceptBtnEl.addEventListener('click', handleBet);
 document.querySelector('.hit-btn').addEventListener('click', handleHit);
 document.querySelector('.stand-btn').addEventListener('click', handleStand);
-document.querySelector('.casino-chips').addEventListener('click', handleBet);
+chip10.addEventListener('click', add10);
+chip25.addEventListener('click', add25);
+chip50.addEventListener('click', add50);
+chip100.addEventListener('click', add100);
+
 
 /*----- functions -----*/
 init();
 
+function add10() {
+    cash = cash - 10;
+    cashEl.innerHTML = cash;
+    bet = bet + 10;
+    betEl.innerHTML = bet;
+}
+
+function add25() {
+    cash = cash - 25;
+    cashEl.innerHTML = cash;
+    bet = bet + 25;
+    betEl.innerHTML = bet;
+}
+
+function add50() {
+    cash = cash - 50;
+    cashEl.innerHTML = cash;
+    bet = bet + 50;
+    betEl.innerHTML = bet;
+}
+
+function add100() {
+    cash = cash - 100;
+    cashEl.innerHTML = cash;
+    bet = bet + 100;
+    betEl.innerHTML = bet;
+}
 function handleStand() {
   dealerPlay(function() {
     if (pTotal === dTotal) {
@@ -78,15 +113,6 @@ function handleHit() {
   render();
 }
 
-function handleAccept(evt) {
-  const btn = evt.target;
-  if (btn.tagName !== 'BUTTON') return;
-  const betAmt = parseInt(btn.innerText.replace('$', ''));
-  bet += betAmt;
-  cash -= betAmt;
-  render();
-}
-
 function handleBet() {
   outcome = null;
   deck = getNewShuffledDeck();
@@ -112,6 +138,8 @@ function settleBet() {
     cash += bet + (bet * 1.5);
   } else if (outcome === 'P') {
     cash += bet * 2;
+  } else if (outcome === 'T'){
+      cash += bet
   }
   bet = 0;
 }
@@ -145,16 +173,9 @@ function render() {
   cashEl.innerText = cash;
   betEl.innerText = bet;
   renderControls();
-  renderBetBtns();
   msgEl.innerHTML = MSG_LOOKUP[outcome];
 }
 
-function renderBetBtns() {
-  betBtns.forEach(function(btn) {
-    const btnAmt = parseInt(btn.innerText.replace('$', ''));
-    btn.disabled = btnAmt > cash;
-  });
-}
 
 function renderControls() {
   betControlsEl.style.visibility = handInPlay() ? 'hidden' : 'visible';
@@ -185,7 +206,6 @@ function getNewShuffledDeck() {
 
 function buildMainDeck() {
   const deck = [];
-  // Use nested forEach to generate card objects
   suits.forEach(function(suit) {
     ranks.forEach(function(rank) {
       deck.push({
