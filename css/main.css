@@ -6,7 +6,7 @@
 
 .background-image {
     background-image: url(https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg); ;
-    background-size: 1400px 700px;
+    background-size:cover;
     background-position: cover;
     background-repeat: no-repeat;
     height: 100vh;
